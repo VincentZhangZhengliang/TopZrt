@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vincent.topzrt.MainActivity">
+
+    <ImageView
+        android:id="@+id/id_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"/>
+
+
+    <Button
+        android:id="@+id/id_choose_small"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id_iv"
+        android:text="choose_small"/>
+
+    <Button
+        android:id="@+id/id_choose"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id_choose_small"
+        android:text="choose_big"/>
+
+    <Button
+        android:id="@+id/id_test"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id_choose"
+        android:text="test_net"/>
+
+    <Button
+        android:id="@+id/id_test_post"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/id_test"
+        android:text="test_net_post"/>
+
+
+</RelativeLayout>

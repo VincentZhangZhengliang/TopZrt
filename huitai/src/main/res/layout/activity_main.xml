@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/id_investment_mount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="投資金額"/>
+
+        <ImageView
+            android:id="@+id/id_iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_close_black_24dp"/>
+
+        <EditText
+            android:id="@+id/id_et_investment_mount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_investment_mount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edit"
+            android:hint="100元起及100元的整数倍"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/id_tv_investment_mount_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_et_investment_mount"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="*有效投资金额为100元的整数倍部分"/>
+
+
+        <TextView
+            android:id="@+id/id_tv_available_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_investment_mount_tips"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="可用金额: 0.00元"/>
+
+        <TextView
+            android:id="@+id/id_tv_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_tv_investment_mount_tips"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="充值"
+            android:textColor="#6BC3FF"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/id_tv_expected_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_tv_recharge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="预期收益: 0.00元"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_tv_recharge"
+            android:layout_marginTop="5dp"
+            android:text="不代表实际收益"/>
+
+        <View
+            android:id="@+id/id_v_line0"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/id_tv_expected_return"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:id="@+id/id_rl_red_packet"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/id_v_line0">
+
+            <ImageView
+                android:id="@+id/id_iv_red_packet"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/id_iv_red_packet"
+                android:text="红包"
+                android:textSize="20sp"/>
+
+
+            <ImageView
+                android:id="@+id/id_iv_red_packet_next"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_chevron_right_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/id_iv_red_packet_next"
+                android:text="没有可用的红包"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/id_v_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/id_rl_red_packet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_v_line1"
+            android:layout_marginLeft="10dp"
+            android:text="支持投资金额:0.00元"
+            android:textColor="#6BC3FF"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
